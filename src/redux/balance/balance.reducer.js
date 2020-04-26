@@ -10,6 +10,7 @@ const INITIAL_STATE = {
       fromValue: 0,
       toCurrency: "EUR",
       toValue: 0,
+      date: new Date(),
     },
   },
 };
@@ -33,6 +34,7 @@ const exchange = (state, action) => {
         toValue: newBalance,
         fromCurrency: fromCurrency,
         toCurrency: toCurrency,
+        date: new Date(),
       },
     },
   };

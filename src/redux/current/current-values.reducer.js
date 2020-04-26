@@ -2,9 +2,9 @@ import CurrentActionTypes from "./current-values.types";
 
 const INITIAL_STATE = {
   active: {
-    fromCurrency: "GBP",
+    fromCurrency: "EUR",
     fromValue: 0,
-    toCurrency: "EUR",
+    toCurrency: "GBP",
     toValue: 0,
   },
 };
