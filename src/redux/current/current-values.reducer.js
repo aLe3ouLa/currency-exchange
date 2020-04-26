@@ -18,7 +18,7 @@ const setFromValue = (state, action) => {
     ...state,
     active: {
       fromValue: +fromValue,
-      toValue: toValue,
+      toValue: toValue.toFixed(2),
       toCurrency: toCurrency,
       fromCurrency: fromCurrency,
     },

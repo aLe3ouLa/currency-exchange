@@ -22,8 +22,10 @@ const Rates = ({
   const { fromCurrency, toCurrency } = active;
 
   useEffect(() => {
-    fetchRates(fromCurrency);
-  }, [fetchRates, fromCurrency]);
+    setTimeout(() => {
+      fetchRates(fromCurrency);
+    }, 10000);
+  });
 
   return (
     <Container>
