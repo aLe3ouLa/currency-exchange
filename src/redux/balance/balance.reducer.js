@@ -5,7 +5,12 @@ const INITIAL_STATE = {
     EUR: 12.01,
     GBP: 0,
     USD: 10.01,
-    lastExchange: {},
+    lastExchange: {
+      fromCurrency: "GBP",
+      fromValue: 0,
+      toCurrency: "EUR",
+      toValue: 0,
+    },
   },
 };
 

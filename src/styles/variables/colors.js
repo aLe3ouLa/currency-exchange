@@ -4,16 +4,15 @@ export const color = {
 
   primaryDark: "rgb(5, 91, 210)",
 
-  background: "#F0F2F7",
+  background: "#f3f4f5",
 
   shadow: "0 7px 10px 0 rgba(5, 91, 210,.25)",
 
   text: "#4F4E56",
-  textLight: "#757576",
 
   white: "#ffffff",
   black: "#000000",
-  gray: "#B5B5B5",
+  gray: "#8b959e",
 
   warning: "#efb320",
   error: "#c82c1a",

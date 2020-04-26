@@ -16,7 +16,7 @@ const Exchange = styled.div`
   padding: ${({ theme }) => theme.spacing.xxs};
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 20px;
   z-index: 2;
   display: flex;
   align-items: center;

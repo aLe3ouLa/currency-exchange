@@ -105,8 +105,9 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
+    color: ${({ theme }) => theme.color.primary}
     &:hover {
-      color: ${({ theme }) => theme.color.linkHover}
+      color: ${({ theme }) => theme.color.primaryDark}
     }
   }
 

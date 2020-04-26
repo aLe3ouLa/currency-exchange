@@ -6,7 +6,6 @@ const INITIAL_STATE = {
     rates: {},
     date: new Date(),
   },
-  isLoading: true,
 };
 
 const ratesReducer = (state = INITIAL_STATE, action) => {
@@ -15,7 +14,6 @@ const ratesReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         rates: action.payload,
-        isLoading: !state.isLoading,
       };
     default:
       return state;

@@ -1,7 +1,7 @@
 import React from "react";
 
 import FormInput from "../../fragment/FormInput/form-input.component";
-import CurrencySelect from "../../fragment/CurrencySelect/currency-select.component";
+import Currencies from "../../fragment/Currencies/currencies.component";
 import Balance from "../../fragment/Balance/balance.component";
 
 import { Container, FormWrapper } from "./convert.styles";
@@ -22,7 +22,7 @@ const Convert = ({
   return (
     <Container isFromValue={isFromValue}>
       <div style={{ display: "flex", alignItems: "center" }}>
-        <CurrencySelect
+        <Currencies
           name={currency}
           value={currency}
           onChange={handleCurrencyChange}

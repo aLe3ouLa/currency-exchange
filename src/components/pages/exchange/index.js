@@ -2,7 +2,7 @@ import React from "react";
 import CustomButton from "../../fragment/Button/button.component";
 import Rates from "../../fragment/Rates/rates.component";
 import Convert from "../../blocks/Convert/convert.component";
-import ChangeCurrency from "../../fragment/ChangeCurency/ChangeCurrency.component";
+import ChangeCurrency from "../../fragment/ChangeCurrency/ChangeCurrency.component";
 import { connect } from "react-redux";
 
 import { fetchRates } from "../../../redux/rates/rates.actions";
@@ -18,10 +18,20 @@ import Page from "../../fragment/page/page.component";
 class Exchange extends React.Component {
   componentDidMount() {
     this.props.fetchRates(this.props.active.fromCurrency);
+    this.timer = setInterval(
+      () => this.props.fetchRates(this.props.active.fromCurrency),
+      10000
+    );
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
+    this.timer = null;
   }
 
   handleClick = () => {
     this.props.exchange();
+    this.props.history.push("/exchange-done");
   };
 
   handleToValueChange = (event) => {
