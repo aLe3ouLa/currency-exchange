@@ -8,7 +8,7 @@ export const BalanceContainer = styled.p`
   ${({ error }) =>
     error
       ? css`
-          color: ${({ theme }) => theme.color.error};
+          color: ${({ theme }) => theme.color.secondary};
         `
       : css`
           color: ${({ theme }) => theme.color.gray};
