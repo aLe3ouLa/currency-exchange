@@ -6,7 +6,7 @@ export const color = {
 
   background: "#F0F2F7",
 
-  shadow: "0 5px 10px 0 rgba(5, 91, 210,.25)",
+  shadow: "0 7px 10px 0 rgba(5, 91, 210,.25)",
 
   text: "#4F4E56",
   textLight: "#757576",

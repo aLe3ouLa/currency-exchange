@@ -21,22 +21,24 @@ const Convert = ({
   const currency = isFromValue ? fromCurrency : toCurrency;
   return (
     <Container isFromValue={isFromValue}>
-      <CurrencySelect
-        name={currency}
-        value={currency}
-        onChange={handleCurrencyChange}
-        isDisabled={false}
-      />
-      <FormWrapper>
-        <FormInput
-          name="value"
-          value={value}
-          onChange={handleChange}
-          disabled={!rates.date}
-          isFromValue={isFromValue}
-          isZero={value === 0}
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <CurrencySelect
+          name={currency}
+          value={currency}
+          onChange={handleCurrencyChange}
+          isDisabled={false}
         />
-      </FormWrapper>
+        <FormWrapper>
+          <FormInput
+            name="value"
+            value={value}
+            onChange={handleChange}
+            disabled={!rates.date}
+            isFromValue={isFromValue}
+            isZero={value === 0}
+          />
+        </FormWrapper>
+      </div>
       <Balance
         balance={balance}
         currency={currency}

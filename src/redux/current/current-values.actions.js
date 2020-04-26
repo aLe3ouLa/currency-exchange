@@ -53,3 +53,9 @@ export const setToCurrency = (toCurrency) => (dispatch, getState) => {
     });
   });
 };
+
+export const changeFromTo = () => (dispatch) => {
+  return dispatch({
+    type: CurrentActionTypes.EXCHANGE_CURRENCY,
+  });
+};

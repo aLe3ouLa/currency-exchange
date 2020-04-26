@@ -12,7 +12,7 @@ const FormInput = ({
 }) => {
   return (
     <React.Fragment>
-      <Sign>{isFromValue ? `-` : `+`}</Sign>
+      <Sign>{value ? (isFromValue ? `-` : `+`) : ""}</Sign>
       <Input
         isZero={isZero}
         name={name}

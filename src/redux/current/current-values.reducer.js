@@ -78,6 +78,21 @@ const setToCurrency = (state, action) => {
   };
 };
 
+const changeFromTo = (state, action) => {
+  const { active } = state;
+  const { fromValue, fromCurrency, toValue, toCurrency } = active;
+
+  return {
+    ...state,
+    active: {
+      fromValue: toValue,
+      toValue: fromValue,
+      toCurrency: fromCurrency,
+      fromCurrency: toCurrency,
+    },
+  };
+};
+
 export default function currentValuesReducer(state = INITIAL_STATE, action) {
   switch (action.type) {
     case CurrentActionTypes.SET_FROM_VALUE:
@@ -88,6 +103,8 @@ export default function currentValuesReducer(state = INITIAL_STATE, action) {
       return setFromCurrency(state, action);
     case CurrentActionTypes.SET_TO_CURRENCY:
       return setToCurrency(state, action);
+    case CurrentActionTypes.EXCHANGE_CURRENCY:
+      return changeFromTo(state, action);
     default:
       return state;
   }

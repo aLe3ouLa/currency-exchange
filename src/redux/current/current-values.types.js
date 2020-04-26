@@ -3,6 +3,7 @@ const CurrentActionTypes = {
   SET_TO_VALUE: "SET_TO_VALUE",
   SET_FROM_CURRENCY: "SET_FROM_CURRENCY",
   SET_TO_CURRENCY: "SET_TO_CURRENCY",
+  EXCHANGE_CURRENCY: "EXCHANGE_CURRENCY",
 };
 
 export default CurrentActionTypes;

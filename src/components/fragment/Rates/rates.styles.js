@@ -5,11 +5,11 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.color.white};
   border-radius: 18px;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: 500;
   color: ${({ theme }) => theme.color.primary};
   padding: ${({ theme }) => theme.spacing.xxs}
     ${({ theme }) => theme.spacing.xs};
-  border: 1px solid ${({ theme }) => theme.color.gray};
+  border: 1px solid ${({ theme }) => theme.color.background};
   width: 50%;
 
   display: flex;

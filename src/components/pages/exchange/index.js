@@ -2,7 +2,7 @@ import React from "react";
 import CustomButton from "../../fragment/Button/button.component";
 import Rates from "../../fragment/Rates/rates.component";
 import Convert from "../../blocks/Convert/convert.component";
-
+import ChangeCurrency from "../../fragment/ChangeCurency/ChangeCurrency.component";
 import { connect } from "react-redux";
 
 import { fetchRates } from "../../../redux/rates/rates.actions";
@@ -73,6 +73,7 @@ class Exchange extends React.Component {
             handleChange={this.handleFromValueChange}
             handleCurrencyChange={this.handleFromCurrencyChange}
           />
+          <ChangeCurrency />
           <Rates />
           <Convert
             balance={balance}

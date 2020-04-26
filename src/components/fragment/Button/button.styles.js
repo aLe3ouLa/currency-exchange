@@ -23,7 +23,7 @@ export const ButtonContainer = styled.button`
     background-color: ${({ theme }) => theme.color.primaryDark};
   }
   &:disabled {
-    opacity: 0.2;
+    opacity: 0.3;
     border-width: 0px;
     border-style: initial;
     border-color: initial;
