@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Change Currency tests has a valid snapshot  1`] = `
+<DocumentFragment>
+  <select
+    class="sc-AxjAm kNBgxb"
+    data-testid="select"
+    id="select"
+    name="select"
+  >
+    <option
+      label="GBP"
+      value="GBP"
+    />
+    <option
+      label="EUR"
+      value="EUR"
+    />
+    <option
+      label="USD"
+      value="USD"
+    />
+    <option
+      label="JPY"
+      value="JPY"
+    />
+  </select>
+</DocumentFragment>
+`;

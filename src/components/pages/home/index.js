@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Actions from "../../blocks/actions/actions.components";
 import { connect } from "react-redux";
 import Currencies from "../../fragment/Currencies/currencies.component";
-import LastExchange from "../../blocks/LastExchange/last-exchange.components";
+import LastExchange from "../../fragment/LastExchange/last-exchange.components";
 import styled from "styled-components";
 import { convertWithZero } from "../../../utils/convert";
 

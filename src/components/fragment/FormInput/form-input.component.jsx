@@ -15,6 +15,7 @@ const FormInput = ({
     <React.Fragment>
       <Sign>{value ? (isFromValue ? `-` : `+`) : ""}</Sign>
       <Input
+        aria-label="form-input"
         isZero={isZero}
         name={name}
         type="number"

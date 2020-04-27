@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Input has a valid snapshot  1`] = `
+<DocumentFragment>
+  <span
+    class="sc-AxirZ kBcKOJ"
+  />
+  <input
+    aria-label="form-input"
+    autocomplete="off"
+    class="sc-AxjAm ibqwxn"
+    name="value"
+    placeholder="0"
+    type="number"
+    value=""
+  />
+</DocumentFragment>
+`;

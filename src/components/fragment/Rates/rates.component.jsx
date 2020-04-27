@@ -1,11 +1,11 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleNotch, faChartLine } from "@fortawesome/free-solid-svg-icons";
 
 import { RatesContainer, Currency, LineChart } from "./rates.styles";
 import { getCurrencySymbol } from "../../../utils/currencies";
-import { connect } from "react-redux";
 
 const Rates = ({
   rates: { rates },

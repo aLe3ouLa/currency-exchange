@@ -27,7 +27,7 @@ describe("Change Currency tests", () => {
       <ThemeProvider theme={theme}>
         <React.Fragment>
           <Defaults />
-          <ChangeCurrency id="test" handeExchangeCurrencies={handler} />
+          <ChangeCurrency handeExchangeCurrencies={handler} />
         </React.Fragment>
       </ThemeProvider>
     );
