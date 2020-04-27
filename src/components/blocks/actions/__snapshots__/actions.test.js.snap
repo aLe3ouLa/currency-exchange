@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Actions tests has a valid snapshot  1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AxjAm exZMbQ"
+  >
+    <a
+      class="sc-AxirZ jEKaWu"
+      href="/"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-plus fa-w-14 sc-AxiKw fxErNz"
+        data-icon="plus"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+          fill="currentColor"
+        />
+      </svg>
+      <p>
+        Add money
+      </p>
+    </a>
+    <a
+      class="sc-AxirZ jEKaWu"
+      href="/exchange"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-sync-alt fa-w-16 sc-AxiKw fxErNz"
+        data-icon="sync-alt"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M370.72 133.28C339.458 104.008 298.888 87.962 255.848 88c-77.458.068-144.328 53.178-162.791 126.85-1.344 5.363-6.122 9.15-11.651 9.15H24.103c-7.498 0-13.194-6.807-11.807-14.176C33.933 94.924 134.813 8 256 8c66.448 0 126.791 26.136 171.315 68.685L463.03 40.97C478.149 25.851 504 36.559 504 57.941V192c0 13.255-10.745 24-24 24H345.941c-21.382 0-32.09-25.851-16.971-40.971l41.75-41.749zM32 296h134.059c21.382 0 32.09 25.851 16.971 40.971l-41.75 41.75c31.262 29.273 71.835 45.319 114.876 45.28 77.418-.07 144.315-53.144 162.787-126.849 1.344-5.363 6.122-9.15 11.651-9.15h57.304c7.498 0 13.194 6.807 11.807 14.176C478.067 417.076 377.187 504 256 504c-66.448 0-126.791-26.136-171.315-68.685L48.97 471.03C33.851 486.149 8 475.441 8 454.059V320c0-13.255 10.745-24 24-24z"
+          fill="currentColor"
+        />
+      </svg>
+      <p>
+        Exchange
+      </p>
+    </a>
+    <a
+      class="sc-AxirZ jEKaWu"
+      href="/rates"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-info-circle fa-w-16 sc-AxiKw fxErNz"
+        data-icon="info-circle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+          fill="currentColor"
+        />
+      </svg>
+      <p>
+        Rates
+      </p>
+    </a>
+  </div>
+</DocumentFragment>
+`;
