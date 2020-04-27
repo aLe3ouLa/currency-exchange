@@ -2,7 +2,7 @@ import React from "react";
 import CustomButton from "../../fragment/Button/button.component";
 import Rates from "../../fragment/Rates/rates.component";
 import Convert from "../../blocks/Convert/convert.component";
-import ChangeCurrency from "../../fragment/ChangeCurrency/ChangeCurrency.component";
+import ChangeCurrency from "../../fragment/ChangeCurrency/change-currency.component";
 import { connect } from "react-redux";
 import {
   setFromValue,
