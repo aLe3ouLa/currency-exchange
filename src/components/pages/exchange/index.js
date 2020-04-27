@@ -9,6 +9,7 @@ import {
   setToValue,
   setFromCurrency,
   setToCurrency,
+  changeFromTo,
 } from "../../../redux/current/current-values.actions";
 import { exchange } from "../../../redux/balance/balance.actions";
 
@@ -36,6 +37,10 @@ class Exchange extends React.Component {
   };
   handleToCurrencyChange = (event) => {
     this.props.setToCurrency(event.target.value);
+  };
+
+  handeExchangeCurrencies = () => {
+    this.props.changeFromTo();
   };
 
   render() {
@@ -110,6 +115,7 @@ const mapDispatchToProps = (dispatch) => ({
   setFromCurrency: (fromCurrency) => dispatch(setFromCurrency(fromCurrency)),
   setToCurrency: (toCurrency) => dispatch(setToCurrency(toCurrency)),
   exchange: (balance) => dispatch(exchange(balance)),
+  changeFromTo: () => dispatch(changeFromTo()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Exchange);

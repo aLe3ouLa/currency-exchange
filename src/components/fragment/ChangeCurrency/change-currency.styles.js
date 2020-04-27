@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const ExchangeContainer = styled.div`
+export const ExchangeContainer = styled.button`
   border-radius: 50%;
   border: 1px solid ${({ theme }) => theme.color.background};
   background-color: ${({ theme }) => theme.color.white};
