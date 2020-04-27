@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Balance tests has a valid snapshot  1`] = `
+<DocumentFragment>
+  <p
+    class="sc-AxjAm gtFmXl"
+  >
+    Balance: € 5
+  </p>
+</DocumentFragment>
+`;
