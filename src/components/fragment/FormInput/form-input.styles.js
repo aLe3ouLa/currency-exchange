@@ -7,7 +7,7 @@ export const Input = styled.input`
   background: transparent;
   font-size: 3rem;
   display: flex;
-  width: 100%;
+  width: 70%;
   ${({ isZero }) =>
     isZero
       ? css`

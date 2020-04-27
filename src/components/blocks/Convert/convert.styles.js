@@ -22,4 +22,5 @@ export const Container = styled.div`
 export const FormWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
+  flex-basis: 100%;
 `;

@@ -35,12 +35,10 @@ class Exchange extends React.Component {
   };
 
   handleToValueChange = (event) => {
-    console.log(event.target.value);
     this.props.setToValue(event.target.value);
   };
 
   handleFromValueChange = (event) => {
-    console.log(event.target.value);
     this.props.setFromValue(event.target.value);
   };
 
