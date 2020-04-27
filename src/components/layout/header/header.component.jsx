@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSyncAlt, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { HeaderContainer, Close, Title } from "./header.styles";
+import { HeaderContainer, Close, Title, HeaderTitle } from "./header.styles";
 
 const Header = () => {
   let location = useLocation();
@@ -19,19 +19,14 @@ const Header = () => {
   return (
     !modal && (
       <HeaderContainer modal={modal}>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
+        <HeaderTitle>
           {closeBtn ? (
             <Link to="/">
               <Close icon={faTimes} />
             </Link>
           ) : null}
           <Title>{title}</Title>
-        </div>
+        </HeaderTitle>
 
         {autoBtn ? (
           <button style={{ backgroundColor: "transparent" }}>

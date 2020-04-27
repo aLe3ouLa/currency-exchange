@@ -13,6 +13,11 @@ export const Close = styled(FontAwesomeIcon)`
   color: ${({ theme }) => theme.color.text};
 `;
 
+export const HeaderTitle = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export const HeaderContainer = styled.div`
   height: 45px;
   display: flex;

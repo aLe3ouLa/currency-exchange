@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Actions from "../../blocks/actions/actions.components";
+import Actions from "../../blocks/Actions/actions.components";
 import { connect } from "react-redux";
 import Currencies from "../../fragment/Currencies/currencies.component";
 import LastExchange from "../../fragment/LastExchange/last-exchange.components";
@@ -28,12 +28,11 @@ const Homepage = ({ balance: { balance } }) => {
         onChange={(e) => setCurrency(e.target.value)}
         isDisabled={false}
       />
-      {console.log()}
       <p>{convertWithZero(balance[currency])} </p>
       <Actions />
 
       <br />
-      <h4>Last Exchange: </h4>
+      <h5>Last Exchange: </h5>
       {renderLastExchange}
     </HomeContainer>
   );

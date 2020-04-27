@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rates tests has a valid snapshot  1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AxhUy kmTHDE"
+  >
+    <div
+      style="display: flex; align-items: center;"
+    >
+      <select
+        class="sc-AxiKw dhSpfk"
+        data-testid="select"
+        id="GBP"
+        name="GBP"
+      >
+        <option
+          label="GBP"
+          value="GBP"
+        />
+        <option
+          label="EUR"
+          value="EUR"
+        />
+        <option
+          label="USD"
+          value="USD"
+        />
+        <option
+          label="JPY"
+          value="JPY"
+        />
+      </select>
+      <div
+        class="sc-AxgMl IvxZu"
+      >
+        <span
+          class="sc-AxirZ kBcKOJ"
+        >
+          +
+        </span>
+        <input
+          aria-label="form-input"
+          autocomplete="off"
+          class="sc-AxjAm ibqwxn"
+          disabled=""
+          name="value"
+          placeholder="0"
+          type="number"
+          value="1"
+        />
+      </div>
+    </div>
+    <p
+      class="sc-AxhCb ipKkGq"
+    >
+      Balance: £ 1
+    </p>
+  </div>
+</DocumentFragment>
+`;

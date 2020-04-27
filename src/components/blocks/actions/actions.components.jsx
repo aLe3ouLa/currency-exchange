@@ -1,11 +1,11 @@
-import React from "react";
+import React from "./node_modules/react";
 import { ExchangeIcon, Exchange, ExchangeContainer } from "./actions.style";
 
 import {
   faSyncAlt,
   faInfoCircle,
   faPlus,
-} from "@fortawesome/free-solid-svg-icons";
+} from "./node_modules/@fortawesome/free-solid-svg-icons";
 
 const Actions = () => {
   return (

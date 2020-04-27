@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 
 const RateList = ({ rates: { rates } }) => {
   const renderedRates = rates.rates;
-  console.log(rates.rates);
   return (
     <div>
       <p>Base: {rates.base}</p>

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header tests has a valid snapshot  1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AxhCb gvOgAg"
+  >
+    <div
+      class="sc-AxiKw dPWazA"
+    >
+      <h1
+        class="sc-AxjAm hczKRe"
+      >
+        Dashboard
+      </h1>
+    </div>
+  </div>
+</DocumentFragment>
+`;
