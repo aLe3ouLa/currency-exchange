@@ -27,9 +27,9 @@ const LastExchange = ({ lastExchange }) => {
           <DateParagraph>
             {moment(lastExchange.date).format("MMM Do YYYY")}
           </DateParagraph>
-          <p>{`${getCurrencySymbol(
-            lastExchange.toCurrency
-          )} +${lastExchange.toValue.toFixed(2)}`}</p>
+          <p>{`${getCurrencySymbol(lastExchange.toCurrency)} +${
+            lastExchange.toValue
+          }`}</p>
         </ParagraphContainer>
       </div>
     </LastExchangeContainer>

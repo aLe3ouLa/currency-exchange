@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import Currencies from "../../fragment/Currencies/currencies.component";
 import LastExchange from "../../blocks/LastExchange/last-exchange.components";
 import styled from "styled-components";
+import { convertWithZero } from "../../../utils/convert";
 
 const HomeContainer = styled.div`
   padding: 0 ${({ theme }) => theme.spacing.xs};
@@ -27,7 +28,8 @@ const Homepage = ({ balance: { balance } }) => {
         onChange={(e) => setCurrency(e.target.value)}
         isDisabled={false}
       />
-      <p>{balance[currency]} </p>
+      {console.log()}
+      <p>{convertWithZero(balance[currency])} </p>
       <Actions />
 
       <br />

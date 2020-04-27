@@ -3,8 +3,9 @@ import BalanceActionTypes from "./balance.types";
 const INITIAL_STATE = {
   balance: {
     EUR: 12.01,
-    GBP: 0,
+    GBP: 0.0,
     USD: 10.01,
+    JPY: 0.0,
     lastExchange: {
       fromCurrency: "GBP",
       fromValue: 0,
@@ -20,8 +21,8 @@ const exchange = (state, action) => {
   const { fromValue, fromCurrency, toCurrency } = active.active;
   const newBalance = fromValue * rates.rates.rates[toCurrency];
 
-  const newFrom = balance.balance[fromCurrency] - fromValue;
-  const newTo = balance.balance[toCurrency] + newBalance;
+  const newFrom = (balance.balance[fromCurrency] - fromValue).toFixed(2);
+  const newTo = (balance.balance[toCurrency] + newBalance).toFixed(2);
 
   return {
     ...state,
@@ -31,7 +32,7 @@ const exchange = (state, action) => {
       [toCurrency]: newTo,
       lastExchange: {
         fromValue: fromValue,
-        toValue: newBalance,
+        toValue: newBalance.toFixed(2),
         fromCurrency: fromCurrency,
         toCurrency: toCurrency,
         date: new Date(),

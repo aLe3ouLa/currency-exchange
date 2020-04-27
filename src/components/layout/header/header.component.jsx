@@ -7,9 +7,14 @@ import { HeaderContainer, Close, Title } from "./header.styles";
 const Header = () => {
   let location = useLocation();
   const modal = location.pathname.includes("exchange-done");
-  const closeBtn = location.pathname.includes("exchange");
+  const closeBtn =
+    location.pathname.includes("exchange") ||
+    location.pathname.includes("rates");
+  const autoBtn = location.pathname.includes("exchange");
   const title = location.pathname.includes("exchange")
     ? "Exchange"
+    : location.pathname.includes("rates")
+    ? "Rates"
     : "Dashboard";
   return (
     !modal && (
@@ -28,7 +33,7 @@ const Header = () => {
           <Title>{title}</Title>
         </div>
 
-        {closeBtn ? (
+        {autoBtn ? (
           <button style={{ backgroundColor: "transparent" }}>
             Auto <FontAwesomeIcon icon={faSyncAlt} />
           </button>

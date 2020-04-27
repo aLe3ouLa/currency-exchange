@@ -4,8 +4,6 @@ import Rates from "../../fragment/Rates/rates.component";
 import Convert from "../../blocks/Convert/convert.component";
 import ChangeCurrency from "../../fragment/ChangeCurrency/ChangeCurrency.component";
 import { connect } from "react-redux";
-
-import { fetchRates } from "../../../redux/rates/rates.actions";
 import {
   setFromValue,
   setToValue,
@@ -13,17 +11,8 @@ import {
   setToCurrency,
 } from "../../../redux/current/current-values.actions";
 import { exchange } from "../../../redux/balance/balance.actions";
-import Page from "../../fragment/page/page.component";
 
 class Exchange extends React.Component {
-  componentDidMount() {
-    this.props.fetchRates(this.props.active.fromCurrency);
-    this.timer = setInterval(
-      () => this.props.fetchRates(this.props.active.fromCurrency),
-      10000
-    );
-  }
-
   componentWillUnmount() {
     clearInterval(this.timer);
     this.timer = null;
@@ -62,7 +51,7 @@ class Exchange extends React.Component {
       active.fromValue === "";
 
     return (
-      <Page>
+      <div>
         <div
           style={{
             display: "flex",
@@ -102,7 +91,7 @@ class Exchange extends React.Component {
         >
           Exchange
         </CustomButton>
-      </Page>
+      </div>
     );
   }
 }
@@ -116,7 +105,6 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchRates: (currency) => dispatch(fetchRates(currency)),
   setFromValue: (fromValue) => dispatch(setFromValue(fromValue)),
   setToValue: (toValue) => dispatch(setToValue(toValue)),
   setFromCurrency: (fromCurrency) => dispatch(setFromCurrency(fromCurrency)),

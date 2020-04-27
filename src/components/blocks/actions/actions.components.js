@@ -44,9 +44,9 @@ const Actions = () => {
         <ExchangeIcon icon={faSyncAlt} />
         <p>Exchange</p>
       </Exchange>
-      <Exchange to="/">
+      <Exchange to="/rates">
         <ExchangeIcon icon={faInfoCircle} />
-        <p>Details</p>
+        <p>Rates</p>
       </Exchange>
     </div>
   );
