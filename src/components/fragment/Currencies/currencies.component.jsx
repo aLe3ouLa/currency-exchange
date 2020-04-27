@@ -14,6 +14,7 @@ const Currencies = ({ name, value, onChange, isDisabled }) => (
       <option value="GBP" label="GBP" />
       <option value="EUR" label="EUR" />
       <option value="USD" label="USD" />
+      <option value="JPY" label="JPY" />
     </Select>
   </div>
 );

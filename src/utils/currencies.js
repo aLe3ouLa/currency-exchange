@@ -14,6 +14,8 @@ export const getCurrencySymbol = (currencyCode) => {
       return "$";
     case "EUR":
       return "€";
+    case "JPY":
+      return "¥";
     case "GBP":
     default:
       return "£";

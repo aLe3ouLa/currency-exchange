@@ -12,7 +12,9 @@ const INITIAL_STATE = {
 const setFromValue = (state, action) => {
   const { toCurrency, fromCurrency } = state.active;
   const { fromValue, rates } = action.payload;
-  const toValue = fromValue * rates.rates.rates[toCurrency];
+  const toValue = fromValue
+    ? (fromValue * rates.rates.rates[toCurrency]).toFixed(2)
+    : 0;
 
   return {
     ...state,
@@ -28,7 +30,9 @@ const setFromValue = (state, action) => {
 const setToValue = (state, action) => {
   const { toValue, rates } = action.payload;
   const { toCurrency, fromCurrency } = state.active;
-  const fromValue = toValue / rates.rates.rates[toCurrency];
+  const fromValue = toValue
+    ? (toValue / rates.rates.rates[toCurrency]).toFixed(2)
+    : 0;
 
   return {
     ...state,

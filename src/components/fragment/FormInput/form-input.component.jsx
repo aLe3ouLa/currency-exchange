@@ -1,11 +1,7 @@
 import React from "react";
 
 import { Input, Sign } from "./form-input.styles";
-
-const convert = (number) => {
-  const decimal = (number.toString().split(".")[1] || []).length;
-  return decimal > 2 ? Number(number).toFixed(2) : number;
-};
+import { convert } from "../../../utils/convert";
 
 const FormInput = ({
   name,
@@ -21,6 +17,7 @@ const FormInput = ({
       <Input
         isZero={isZero}
         name={name}
+        type="number"
         value={convert(value)}
         placeholder="0"
         onChange={onChange}
