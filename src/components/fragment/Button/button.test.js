@@ -56,7 +56,6 @@ describe("Button tests", () => {
   });
 
   it("disables button", () => {
-    const handler = jest.fn();
     const { getByText } = render(
       <ThemeProvider theme={theme}>
         <React.Fragment>
