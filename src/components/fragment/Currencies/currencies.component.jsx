@@ -2,6 +2,8 @@ import React from "react";
 
 import { Select } from "./currencies.styles";
 
+const availableCurrencies = ["GBP", "EUR", "USD", "JPY"];
+
 const Currencies = ({ name, value, onChange, isDisabled }) => (
   <div>
     <Select
@@ -11,10 +13,9 @@ const Currencies = ({ name, value, onChange, isDisabled }) => (
       onChange={onChange}
       disabled={isDisabled}
     >
-      <option value="GBP" label="GBP" />
-      <option value="EUR" label="EUR" />
-      <option value="USD" label="USD" />
-      <option value="JPY" label="JPY" />
+      {availableCurrencies.map((currency) => {
+        return <option key={currency} value={currency} label={currency} />;
+      })}
     </Select>
   </div>
 );

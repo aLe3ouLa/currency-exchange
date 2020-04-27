@@ -75,7 +75,9 @@ class Exchange extends React.Component {
             handleChange={this.handleFromValueChange}
             handleCurrencyChange={this.handleFromCurrencyChange}
           />
-          <ChangeCurrency />
+          <ChangeCurrency
+            handeExchangeCurrencies={this.handeExchangeCurrencies}
+          />
           <Rates />
           <Convert
             balance={balance}
