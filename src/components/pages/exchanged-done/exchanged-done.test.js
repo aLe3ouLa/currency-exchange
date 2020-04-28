@@ -10,7 +10,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import configureStore from "redux-mock-store";
 const mockStore = configureStore([]);
 
-describe("Home Page tests", () => {
+describe("Exchange Done Page tests", () => {
   afterEach(cleanup);
 
   let store;

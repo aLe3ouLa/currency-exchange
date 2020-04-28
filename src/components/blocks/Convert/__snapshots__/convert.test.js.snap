@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rates tests has a valid snapshot  1`] = `
+exports[`Convert tests has a valid snapshot  1`] = `
 <DocumentFragment>
   <div
     class="sc-AxhUy kmTHDE"
   >
     <div
-      style="display: flex; align-items: center;"
+      class="sc-AxgMl cjEjyT"
     >
       <select
         class="sc-AxiKw dhSpfk"
@@ -32,7 +32,7 @@ exports[`Rates tests has a valid snapshot  1`] = `
         />
       </select>
       <div
-        class="sc-AxgMl IvxZu"
+        class="sc-AxheI hobWdg"
       >
         <span
           class="sc-AxirZ kBcKOJ"

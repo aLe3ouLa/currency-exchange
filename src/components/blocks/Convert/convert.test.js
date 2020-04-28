@@ -5,7 +5,7 @@ import { cleanup, render } from "@testing-library/react";
 
 import { ThemeProvider } from "styled-components";
 import { theme, Defaults } from "../../../styles";
-describe("Rates tests", () => {
+describe("Convert tests", () => {
   afterEach(cleanup);
 
   let props = {

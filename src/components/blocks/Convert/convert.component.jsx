@@ -4,7 +4,7 @@ import FormInput from "../../fragment/FormInput/form-input.component";
 import Currencies from "../../fragment/Currencies/currencies.component";
 import Balance from "../../fragment/Balance/balance.component";
 
-import { Container, FormWrapper } from "./convert.styles";
+import { Container, FormWrapper, CurrencyCtn } from "./convert.styles";
 
 const Convert = ({
   balance,
@@ -21,7 +21,7 @@ const Convert = ({
   const currency = isFromValue ? fromCurrency : toCurrency;
   return (
     <Container isFromValue={isFromValue}>
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <CurrencyCtn>
         <Currencies
           name={currency}
           value={currency}
@@ -38,7 +38,7 @@ const Convert = ({
             isZero={value === 0}
           />
         </FormWrapper>
-      </div>
+      </CurrencyCtn>
       <Balance
         balance={balance}
         currency={currency}

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home Page tests has a valid snapshot  1`] = `
+exports[`Exchange Done Page tests has a valid snapshot  1`] = `
 <DocumentFragment>
   <div
     class="sc-AxirZ hxfsUN"

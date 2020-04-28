@@ -19,6 +19,11 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
+export const CurrencyCtn = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export const FormWrapper = styled.div`
   display: flex;
   justify-content: flex-end;

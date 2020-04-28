@@ -4,13 +4,13 @@ exports[`Exchange Page tests has a valid snapshot  1`] = `
 <DocumentFragment>
   <div>
     <div
-      class="sc-fzplWN cpRKJD"
+      class="sc-fznyAO gZCuon"
     >
       <div
         class="sc-AxmLO jZWDuR"
       >
         <div
-          style="display: flex; align-items: center;"
+          class="sc-fzozJi wjHre"
         >
           <select
             class="sc-AxheI kUgSbB"
@@ -36,7 +36,7 @@ exports[`Exchange Page tests has a valid snapshot  1`] = `
             />
           </select>
           <div
-            class="sc-fzozJi cwCfVz"
+            class="sc-fzoLsD hxsArJ"
           >
             <span
               class="sc-AxgMl varXG"
@@ -59,11 +59,11 @@ exports[`Exchange Page tests has a valid snapshot  1`] = `
         </p>
       </div>
       <button
-        class="sc-fzoLsD jmWChO"
+        class="sc-fzpans fsIHOC"
       >
         <svg
           aria-hidden="true"
-          class="svg-inline--fa fa-exchange-alt fa-w-16 fa-rotate-90 sc-fzpans cuIFsi"
+          class="svg-inline--fa fa-exchange-alt fa-w-16 fa-rotate-90 sc-fzplWN fwruor"
           data-icon="exchange-alt"
           data-prefix="fas"
           focusable="false"
@@ -101,7 +101,7 @@ exports[`Exchange Page tests has a valid snapshot  1`] = `
         class="sc-AxmLO jvamAq"
       >
         <div
-          style="display: flex; align-items: center;"
+          class="sc-fzozJi wjHre"
         >
           <select
             class="sc-AxheI kUgSbB"
@@ -127,7 +127,7 @@ exports[`Exchange Page tests has a valid snapshot  1`] = `
             />
           </select>
           <div
-            class="sc-fzozJi cwCfVz"
+            class="sc-fzoLsD hxsArJ"
           >
             <span
               class="sc-AxgMl varXG"
