@@ -53,6 +53,6 @@ describe("Loading", () => {
 
     const actual = store.getState().balance;
 
-    expect(actual.balance.EUR).toEqual("12.01");
+    expect(actual.balance.EUR).toEqual(12.01);
   });
 });

@@ -48,7 +48,7 @@ exports[`Exchange Page tests has a valid snapshot  1`] = `
               name="value"
               placeholder="0"
               type="number"
-              value="0"
+              value=""
             />
           </div>
         </div>
@@ -139,7 +139,7 @@ exports[`Exchange Page tests has a valid snapshot  1`] = `
               name="value"
               placeholder="0"
               type="number"
-              value="0"
+              value=""
             />
           </div>
         </div>
