@@ -43,4 +43,18 @@ describe("Last exchange tests", () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it("has a title when last exchange has a toCurrency", () => {
+    const { getByTestId, getByText } = render(
+      <ThemeProvider theme={theme}>
+        <React.Fragment>
+          <Defaults />
+          <LastExchange {...props} />
+        </React.Fragment>
+      </ThemeProvider>
+    );
+
+    expect(getByTestId("title")).toBeInTheDocument();
+    expect(getByText("Exchanged to EUR")).toBeInTheDocument();
+  });
 });

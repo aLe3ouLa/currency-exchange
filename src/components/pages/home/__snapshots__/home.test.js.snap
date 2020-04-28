@@ -3,7 +3,7 @@
 exports[`Home Page tests has a valid snapshot  1`] = `
 <DocumentFragment>
   <div
-    class="sc-AxmLO kuRKdH"
+    class="sc-fzoLsD dcWwlM"
   >
     <select
       class="sc-AxhCb jIGZYk"
@@ -105,9 +105,6 @@ exports[`Home Page tests has a valid snapshot  1`] = `
       </a>
     </div>
     <br />
-    <h5>
-      Last Exchange: 
-    </h5>
   </div>
 </DocumentFragment>
 `;

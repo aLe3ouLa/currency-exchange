@@ -26,7 +26,7 @@ const Rates = ({
           </Currency>
         </div>
       ) : (
-        <FontAwesomeIcon icon={faCircleNotch} spin />
+        <FontAwesomeIcon icon={faCircleNotch} spin data-testid="spinner" />
       )}
     </RatesContainer>
   );

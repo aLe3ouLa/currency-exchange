@@ -79,4 +79,53 @@ describe("Rates tests", () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it("has a valid snapshot ", () => {
+    const newStore = mockStore({
+      rates: {
+        rates: {
+          base: "GBP",
+          rates: {},
+          date: new Date(),
+        },
+      },
+      active: {
+        active: {
+          fromCurrency: "EUR",
+          fromValue: 0,
+          toCurrency: "GBP",
+          toValue: 0,
+        },
+      },
+      balance: {
+        balance: {
+          EUR: 12.01,
+          GBP: 0.0,
+          USD: 10.01,
+          JPY: 0.0,
+          lastExchange: {
+            fromCurrency: "GBP",
+            fromValue: 0,
+            toCurrency: "EUR",
+            toValue: 0,
+            date: new Date(),
+          },
+        },
+      },
+      isLoading: true,
+    });
+
+    const { getByTestId } = render(
+      <Provider store={newStore}>
+        <ThemeProvider theme={theme}>
+          <React.Fragment>
+            <Defaults />
+            <Rates />
+          </React.Fragment>
+        </ThemeProvider>
+      </Provider>
+    );
+
+    expect(getByTestId("spinner")).toBeInTheDocument();
+  });
 });

@@ -2,17 +2,19 @@
 
 exports[`Last exchange tests has a valid snapshot  1`] = `
 <DocumentFragment>
+  <h5>
+    Last Exchange: 
+  </h5>
   <div
     class="sc-AxjAm fPwobd"
   >
     <svg
       aria-hidden="true"
-      class="svg-inline--fa fa-sync-alt fa-w-16 "
+      class="svg-inline--fa fa-sync-alt fa-w-16 sc-AxhUy cgaTbR"
       data-icon="sync-alt"
       data-prefix="fas"
       focusable="false"
       role="img"
-      style="margin-right: 12px;"
       viewBox="0 0 512 512"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -22,13 +24,14 @@ exports[`Last exchange tests has a valid snapshot  1`] = `
       />
     </svg>
     <div
-      style="width: 100%;"
+      class="sc-AxgMl gcDAfa"
     >
       <div
         class="sc-AxirZ eJNiei"
       >
         <p
           class="sc-AxiKw hfRGQv"
+          data-testid="title"
         >
           Exchanged to EUR
         </p>

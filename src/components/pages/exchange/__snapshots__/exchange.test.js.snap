@@ -85,6 +85,7 @@ exports[`Exchange Page tests has a valid snapshot  1`] = `
           class="svg-inline--fa fa-circle-notch fa-w-16 fa-spin "
           data-icon="circle-notch"
           data-prefix="fas"
+          data-testid="spinner"
           focusable="false"
           role="img"
           viewBox="0 0 512 512"
@@ -151,6 +152,7 @@ exports[`Exchange Page tests has a valid snapshot  1`] = `
     </div>
     <button
       class="sc-AxjAm FtxYm"
+      disabled=""
     >
       Exchange
     </button>

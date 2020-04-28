@@ -42,20 +42,19 @@ describe("Button tests", () => {
   });
 
   it("fires click successfully", () => {
-    const handler = jest.fn();
     const { getByText } = render(
       <ThemeProvider theme={theme}>
         <React.Fragment>
           <Defaults />
-          <Button {...props} onClick={handler} />
+          <Button {...props} />
         </React.Fragment>
       </ThemeProvider>
     );
-    fireEvent.click(getByText("Click me"));
-    expect(handler).toHaveBeenCalledTimes(1);
+    fireEvent.click(getByText(/Click me/i));
+    expect(props.onClick).toHaveBeenCalledTimes(1);
   });
 
-  it("disables button", () => {
+  it("disables button successully", () => {
     const { getByText } = render(
       <ThemeProvider theme={theme}>
         <React.Fragment>

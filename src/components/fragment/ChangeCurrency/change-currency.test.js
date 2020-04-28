@@ -8,12 +8,16 @@ import { theme, Defaults } from "../../../styles";
 describe("Change Currency tests", () => {
   afterEach(cleanup);
 
+  const props = {
+    handeExchangeCurrencies: jest.fn(),
+  };
+
   it("has a valid snapshot ", () => {
     const { asFragment } = render(
       <ThemeProvider theme={theme}>
         <React.Fragment>
           <Defaults />
-          <ChangeCurrency />
+          <ChangeCurrency {...props} />
         </React.Fragment>
       </ThemeProvider>
     );
@@ -22,16 +26,15 @@ describe("Change Currency tests", () => {
   });
 
   it("fires click successfully", () => {
-    const handler = jest.fn();
     const { getByRole } = render(
       <ThemeProvider theme={theme}>
         <React.Fragment>
           <Defaults />
-          <ChangeCurrency handeExchangeCurrencies={handler} />
+          <ChangeCurrency {...props} />
         </React.Fragment>
       </ThemeProvider>
     );
     fireEvent.click(getByRole("button"));
-    expect(handler).toHaveBeenCalledTimes(1);
+    expect(props.handeExchangeCurrencies).toHaveBeenCalledTimes(1);
   });
 });

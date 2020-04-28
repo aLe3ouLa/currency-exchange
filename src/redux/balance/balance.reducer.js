@@ -1,5 +1,7 @@
 import BalanceActionTypes from "./balance.types";
 
+import { convert } from "../../utils/convert";
+
 const INITIAL_STATE = {
   balance: {
     EUR: 12.01,
@@ -21,18 +23,21 @@ const exchange = (state, action) => {
   const { fromValue, fromCurrency, toCurrency } = active.active;
   const newBalance = fromValue * rates.rates.rates[toCurrency];
 
-  const newFrom = (balance.balance[fromCurrency] - fromValue).toFixed(2);
-  const newTo = (balance.balance[toCurrency] + newBalance).toFixed(2);
+  const newFrom = balance.balance[fromCurrency] - fromValue;
+  const newTo = balance.balance[toCurrency] + newBalance;
+
+  const renderedNewFrom = +convert(newFrom);
+  const renderedNewTo = +convert(newTo);
 
   return {
     ...state,
     balance: {
       ...balance.balance,
-      [fromCurrency]: newFrom,
-      [toCurrency]: newTo,
+      [fromCurrency]: renderedNewFrom,
+      [toCurrency]: renderedNewTo,
       lastExchange: {
         fromValue: fromValue,
-        toValue: newBalance.toFixed(2),
+        toValue: +convert(newBalance),
         fromCurrency: fromCurrency,
         toCurrency: toCurrency,
         date: new Date(),

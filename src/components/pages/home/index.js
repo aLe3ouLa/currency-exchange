@@ -32,7 +32,6 @@ const Homepage = ({ balance: { balance } }) => {
       <Actions />
 
       <br />
-      <h5>Last Exchange: </h5>
       {renderLastExchange}
     </HomeContainer>
   );
