@@ -115,7 +115,7 @@ describe("Loading", () => {
     });
   });
 
-  it("should get the correct FROMValue state when `SET_FROM_VALUE` action is dispatched", async () => {
+  it("should get the correct fromValue state when `SET_FROM_VALUE` action is dispatched", async () => {
     const store = createStore(rootReducer, INITIAL_STATE);
 
     const rates = store.getState().rates;
@@ -137,6 +137,25 @@ describe("Loading", () => {
       fromValue: 10,
       toCurrency: "GBP",
       toValue: "10.00",
+    });
+  });
+
+  it("should get the correct to and from Currencies state when `EXCHANGE_CURRENCY` action is dispatched", async () => {
+    const store = createStore(rootReducer, INITIAL_STATE);
+
+
+    const action = {
+      type: ActionTypes.EXCHANGE_CURRENCY,
+    };
+    store.dispatch(action);
+
+    const actual = store.getState().active;
+
+    expect(actual.active).toEqual({
+      fromCurrency: "GBP",
+      fromValue: 0,
+      toCurrency: "EUR",
+      toValue: 0,
     });
   });
 });

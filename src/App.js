@@ -16,6 +16,11 @@ class App extends React.Component {
       10000
     );
   }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
+    this.timer = null;
+  }
   render() {
     return (
       <React.Fragment>

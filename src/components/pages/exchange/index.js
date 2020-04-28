@@ -14,11 +14,6 @@ import {
 import { exchange } from "../../../redux/balance/balance.actions";
 
 class Exchange extends React.Component {
-  componentWillUnmount() {
-    clearInterval(this.timer);
-    this.timer = null;
-  }
-
   handleClick = () => {
     this.props.exchange();
     this.props.history.push("/exchange-done");
@@ -43,17 +38,22 @@ class Exchange extends React.Component {
     this.props.changeFromTo();
   };
 
+  isExchangeButtonDisabled = () => {
+    const { balance, active } = this.props;
+    return (
+      balance[active.fromCurrency] < active.fromValue ||
+      balance[active.fromCurrency] === 0 ||
+      active.fromValue === 0 ||
+      active.fromValue === ""
+    );
+  };
+
   render() {
     const {
       rates,
       active: { active },
       balance: { balance },
     } = this.props;
-    const isExchangeButtonDisabled =
-      balance[active.fromCurrency] < active.fromValue ||
-      balance[active.fromCurrency] === 0 ||
-      active.fromValue === 0 ||
-      active.fromValue === "";
 
     return (
       <div>
@@ -93,7 +93,7 @@ class Exchange extends React.Component {
         </div>
 
         <CustomButton
-          isDisabled={isExchangeButtonDisabled}
+          isDisabled={this.isExchangeButtonDisabled}
           onClick={this.handleClick}
         >
           Exchange
