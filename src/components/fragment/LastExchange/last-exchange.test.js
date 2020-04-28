@@ -15,7 +15,6 @@ describe("Last exchange tests", () => {
       fromValue: 0,
       toCurrency: "EUR",
       toValue: 0,
-      date: new Date(),
     },
   };
 

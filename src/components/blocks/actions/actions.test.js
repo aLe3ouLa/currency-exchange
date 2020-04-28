@@ -1,9 +1,9 @@
-import React from "./node_modules/react";
-import ReactDOM from "./node_modules/react-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 import Actions from "./actions.components";
-import { cleanup, render } from "./node_modules/@testing-library/react";
+import { cleanup, render } from "@testing-library/react";
 
-import { ThemeProvider } from "./node_modules/styled-components";
+import { ThemeProvider } from "styled-components";
 import { theme, Defaults } from "../../../styles";
 import { BrowserRouter as Router } from "react-router-dom";
 
