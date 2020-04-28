@@ -12,6 +12,7 @@ import {
   changeFromTo,
 } from "../../../redux/current/current-values.actions";
 import { exchange } from "../../../redux/balance/balance.actions";
+import { ConvertContainer } from "./exchange.styles";
 
 class Exchange extends React.Component {
   handleClick = () => {
@@ -38,16 +39,6 @@ class Exchange extends React.Component {
     this.props.changeFromTo();
   };
 
-  isExchangeButtonDisabled = () => {
-    const { balance, active } = this.props;
-    return (
-      balance[active.fromCurrency] < active.fromValue ||
-      balance[active.fromCurrency] === 0 ||
-      active.fromValue === 0 ||
-      active.fromValue === ""
-    );
-  };
-
   render() {
     const {
       rates,
@@ -55,15 +46,15 @@ class Exchange extends React.Component {
       balance: { balance },
     } = this.props;
 
+    const isDisabled =
+      balance[active.fromCurrency] < active.fromValue ||
+      balance[active.fromCurrency] === 0 ||
+      active.fromValue === 0 ||
+      active.fromValue === "";
+
     return (
       <div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            position: "relative",
-          }}
-        >
+        <ConvertContainer>
           <Convert
             balance={balance}
             toValue={active.toValue}
@@ -90,12 +81,9 @@ class Exchange extends React.Component {
             handleChange={this.handleToValueChange}
             handleCurrencyChange={this.handleToCurrencyChange}
           />
-        </div>
+        </ConvertContainer>
 
-        <CustomButton
-          isDisabled={this.isExchangeButtonDisabled}
-          onClick={this.handleClick}
-        >
+        <CustomButton isDisabled={isDisabled} onClick={this.handleClick}>
           Exchange
         </CustomButton>
       </div>
